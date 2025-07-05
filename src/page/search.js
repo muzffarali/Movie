@@ -10,7 +10,7 @@ const Search = () => {
     useEffect(() => {
         getSearchMovie(`https://api.themoviedb.org/3/search/movie?query=${query}&api_key=4e44d9029b1270a757cddc766a1bcb63`)
 
-    }, [])
+    }, [query])
     console.log(searchMovie)
     return (
         <>
