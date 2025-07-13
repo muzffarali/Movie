@@ -1,97 +1,117 @@
-.header{
-    box-shadow: 0px 1px 2px 1px silver;
+.header {
     font-size: 2.5rem;
     padding-left: 2.5rem;
     gap: 1rem;
     display: flex;
     position: fixed;
-    background-color: white;
+    background: #141414;
     z-index: 7;
     top: 0;
     width: 100%;
     height: 60px;
     align-items: center;
-   
-   h1{
-    font-size: 2rem;
-   }
-    p{
-        font-size: 1rem;
-        font-weight: 500;
-        color: gray;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 5rem;
-       
+    .logo{
+    background: #f5c518;
+    border-radius: .5rem .5rem .5rem .5rem;
+         h1 {   
+             font-size: 1.6rem;
+    text-align: center;
     }
-    .searchBar{
+
+    p {
+       font-size: .6rem;
+    font-weight: 500;
+    color: gray;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+    text-align: center;
+
+    }
+    }
+    .searchBar {
         margin-left: 33rem;
         justify-items: center;
-     input{
-        font-size: 1rem;
-        padding: 0.1rem 1rem;
-        border-radius:400px 40px 40px 400px;
-        box-shadow: 0px 1px 2px 1px silver;
-        border:none ;
-     }
-     button{
-        font-size: 1.1rem;
-        border-radius:0px 40px 40px 0px;
-        box-shadow: 0px 1px 2px 1px silver;
-        border: none;
-            margin-left: -1rem;
-     }
-     
+
+        input {
+            font-size: 1rem;
+            padding: 0.1rem 1rem;
+            border-radius: 401px 370px 400px 400px;
+            box-shadow: 0px 1px 2px 1px silver;
+            border: none;
+            
+        }
+
+        button {
+            font-size: 1.1rem;
+    border: none;
+    margin-left: -1rem;
+    background: transparent;
+    position: absolute;
+    top: 1.7rem;
+    right: 5rem;
+    right: 7.8rem;
+        }
+
     }
 }
-.hamBurger{
+
+.hamBurger {
     display: none;
     position: absolute;
     right: -13rem;
     cursor: pointer;
 }
-    //responsive Header
-    @media (max-width: 600px) {
-        .header{
-            width: 100%;
-            .searchBar{
-                display: none;
-            }
-            .hamBurger{
-                display:block;
-                right: .1rem;
-            }
-            input{
-                position: absolute;
-                top: 0.6rem;
-                left: 1rem;
-                right: 1rem;
-                margin-right: 2rem;
-                width: 12rem;
-    max-width: 12rem;
-                
-                
-            }
-            button{
-                position: absolute;
-                top: 0.6rem;
-                left: 14rem;
-            }
-            .resposive{
-                background-color: white;
-                position: fixed;
-                width: 70%;
-                height: 100%;
-                top: 4rem;
-                right: 0;
-                border: 1px solid silver;
-                z-index: 999;
-                transition: .2s ease;
-            }
-        .resposive .searchBar{
-                display: block;
-            }
+
+//responsive Header
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+
+        .searchBar {
+            display: none;
         }
-        
+
+        .hamBurger {
+            display: block;
+            right: .1rem;
+            color: white;
+        }
+
+        input {
+            position: absolute;
+            top: 0.6rem;
+            left: 1rem;
+            right: 1rem;
+            margin-right: 2rem;
+            width: 12rem;
+            max-width: 12rem;
+
+
+        }
+
+        button {
+            position: absolute;
+            top: 0.6rem;
+            left: 13rem;
+        margin-top: -1rem;
+        }
+
+        .resposive {
+            background-color: white;
+            position: fixed;
+            width: 70%;
+            height: 100%;
+            top: 4rem;
+            right: 0;
+            border: 1px solid silver;
+            z-index: 999;
+            transition: .2s ease;
+        }
+
+        .resposive .searchBar {
+            display: block;
+        }
     }
 
+}

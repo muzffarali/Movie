@@ -12,8 +12,10 @@ const Header = () => {
             <header className="header">
                 <nav>
                     <NavLink to='/' style={{ textDecoration: 'none', color: 'black' }}>
+                    <div className="logo">
                         <h1>MyMovie</h1>
                         <p>Watch Moives online</p>
+                        </div>
                     </NavLink>
                 </nav>
                 <div className={isToggle ? "resposive" : "null"}>
